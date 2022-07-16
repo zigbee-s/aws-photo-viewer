@@ -7,10 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <% for (var i =1; i <=keys.length;  i++ ) { %>
-        <img src="/image/<%= keys[i] %>" /> 
-        <%#  will output the numbers 1-10 %>
-    <% } %>
+    <% keys.forEach((key)=>{%>
+        <img src="/image/<%=key %>" /> 
+    <%});%>
 </body>
 </html>

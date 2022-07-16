@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
 
 app.get('/organizations', (req,res) => {
     
-    res.render('organizations', {keys});
+    res.render('organizations', {keys: keys});
 })
 
 app.get('/image/:key', (req, res) => {
